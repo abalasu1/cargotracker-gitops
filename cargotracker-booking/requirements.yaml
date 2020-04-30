@@ -1,4 +1,4 @@
 dependencies:
-- name: cargotracker-booking
-  version: 0.0.9
+- name: cargotracker-booking-0.0.9
+  version: 1.0.0-1
   repository: https://artifactory-tools.workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000.us-east.containers.appdomain.cloud/artifactory/generic-local/workshop-team-one
