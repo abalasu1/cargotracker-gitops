@@ -3,7 +3,7 @@ global:
   tlsSecretName: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000
 
 cargotracker-booking:
-  replicaCount: 3
+  replicaCount: 1
   
   ingress:
     enabled: true
