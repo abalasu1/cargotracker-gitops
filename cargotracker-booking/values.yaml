@@ -17,7 +17,7 @@ cargotracker-booking:
     mqport: "5672"
 
   partOf: "cargotracker-backend-prod"
-  connectsTo: "mysql-prod, rabbitmq-prod, cargotracker-routing"   
+  connectsTo: "mysql-prod, rabbitmq-prod, cargotracker-routing-prod"   
   
   ingress:
     enabled: true
