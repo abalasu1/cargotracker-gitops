@@ -2,19 +2,19 @@ global:
   ingressSubdomain: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000.us-east.containers.appdomain.cloud
   tlsSecretName: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000
 
-cargotracker-booking:
+cargotracker-tracking:
   replicaCount: 1
   logLevel: "fatal"
 
   credentials:
-    dbusername: "Ym9va2luZ21zZGI="
-    dbpassword: "Ym9va2luZ21zZGI="
+    dbusername: "dHJhY2tpbmdtc2Ri"
+    dbpassword: "dHJhY2tpbmdtc2Ri"
     mqusername: "YXBwdXNlcg=="
     mqpassword: "cGFzc3cwcmQ="
   datasources:
-    dburl: "jdbc:mysql://mysql-prod:3306/bookingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
-    mqhost: "rabbitmq-prod-headless"
-    mqport: "5672"  
+    dburl: "jdbc:mysql://mysql-test:3306/trackingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
+    mqhost: "rabbitmq-test-headless"
+    mqport: "5672"   
   
   ingress:
     enabled: true
