@@ -15,6 +15,9 @@ cargotracker-booking:
     dburl: "jdbc:mysql://mysql-test:3306/bookingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
     mqhost: "rabbitmq-test-headless"
     mqport: "5672"  
+
+  partOf: "cargotracker-backend-test"
+  connectsTo: "mysql-test, rabbitmq-test, cargotracker-routing"
   
   ingress:
     enabled: true

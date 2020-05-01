@@ -14,7 +14,10 @@ cargotracker-handling:
   datasources:
     dburl: "jdbc:mysql://mysql-test:3306/handlingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
     mqhost: "rabbitmq-test-headless"
-    mqport: "5672"   
+    mqport: "5672"
+
+  partOf: "cargotracker-backend-test"
+  connectsTo: "mysql-test, rabbitmq-test"   
   
   ingress:
     enabled: true
