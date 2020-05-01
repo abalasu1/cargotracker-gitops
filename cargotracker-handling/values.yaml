@@ -12,8 +12,8 @@ cargotracker-handling:
     mqusername: "YXBwdXNlcg=="
     mqpassword: "cGFzc3cwcmQ="
   datasources:
-    dburl: "jdbc:mysql://mysql-test:3306/handlingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
-    mqhost: "rabbitmq-test-headless"
+    dburl: "jdbc:mysql://mysql-prod:3306/handlingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
+    mqhost: "rabbitmq-prod-headless"
     mqport: "5672"   
   
   ingress:
