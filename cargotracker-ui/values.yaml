@@ -1,0 +1,15 @@
+global:
+  ingressSubdomain: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000.us-east.containers.appdomain.cloud
+  tlsSecretName: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000
+
+cargotracker-ui:
+  replicaCount: 1
+  logLevel: "fatal"
+  
+  partOf: "cargotracker-frontend-test"
+  connectsTo: "cargotracker-bff"
+  
+  ingress:
+    enabled: true
+    tlsSecretName: workshop-ocp43-on-740499-7ec5d722a0ab3f463fdc90eeb94dbc70-0000
+
