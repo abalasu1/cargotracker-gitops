@@ -14,7 +14,10 @@ cargotracker-routing:
   datasources:
     dburl: "jdbc:mysql://mysql-prod:3306/routingmsdb?zeroDateTimeBehavior=CONVERT_TO_NULL&serverTimezone=EST"
     mqhost: "rabbitmq-prod-headless"
-    mqport: "5672"   
+    mqport: "5672"
+
+  partOf: "cargotracker-backend-test"
+  connectsTo: "mysql-test"       
   
   ingress:
     enabled: true
