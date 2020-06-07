@@ -7,7 +7,7 @@ cargotracker-ui:
   logLevel: "fatal"
   
   partOf: "cargotracker-frontend-test"
-  connectsTo: "cargotracker-bff"
+  connectsTo: "cargotracker-frontend-bff-svc"
   
   ingress:
     enabled: true
